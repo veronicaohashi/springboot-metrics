@@ -17,6 +17,11 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	// Metrics
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
+	// Micrometer
+	implementation("io.micrometer:micrometer-registry-prometheus")
+
 }
 
 tasks.withType<Test> {
