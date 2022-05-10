@@ -1,0 +1,12 @@
+#================================================
+# Actuator
+#================================================
+management:
+  endpoints:
+    # HEALTH ENDPOINT
+    health:
+      show-details: always
+    # ENDPOINTS WEB CONFIGURATION
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
